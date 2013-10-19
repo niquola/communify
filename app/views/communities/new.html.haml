@@ -6,7 +6,9 @@
     %input.input-lg.form-control(type = "text")/
   .form-group
     %label City
-    %input.input-lg.form-control(type = "text")/
+    %input.input-lg.form-control(type="text" list="cities")/
+    %datalist#cities
+      %option(ng-repeat="ct in cities" value = "{{ct}}")
   .form-group
     %label Logo
     %input.input-lg.form-control(type = "file")/

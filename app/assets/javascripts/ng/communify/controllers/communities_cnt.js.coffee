@@ -7,4 +7,4 @@ window.app.controller 'CommunityShowCnt', ($scope, $location, Community)->
   $scope.community = Community.get(id: id)
 
 window.app.controller 'CommunityNewCnt', ($scope, $location, Community)->
-  console.log('CommunityNewCnt')
+  $scope.cities = ["Sankt-Peterburg", "Moscow", "Ul'sk"]

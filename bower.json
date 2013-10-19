@@ -12,7 +12,8 @@
     "angular": "1.2.0-rc.2",
     "angular-resource": "1.2.0-rc.2",
     "angular-route": "1.2.0-rc.2",
-    "font-awesome": "3.2.1"
+    "font-awesome": "3.2.1",
+    "bootstrap-select":""
   },
   "ignore": [
     "**/.*",

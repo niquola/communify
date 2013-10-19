@@ -1,4 +1,5 @@
 #= require jquery
+#= require bootstrap/dist/js/bootstrap
 #= require angular
 #= require angular-resource
 #= require angular-route
@@ -19,7 +20,6 @@ configureHttp = (httpp)->
 app = angular.module('communify',['ngRoute','ngResource'])
 
 app.config ['$httpProvider', ($httpProvider, httpConfig) ->
-    console.log('here')
     configureHttp($httpProvider)
 ]
 

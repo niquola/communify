@@ -10,6 +10,9 @@ window.app
       .when "/communities",
         templateUrl: "/communities.ng"
         controller: "CommunitiesCnt"
+      .when "/communities/new",
+        templateUrl: "/communities/new.ng"
+        controller: "CommunityNewCnt"
       .when "/communities/:id",
         templateUrl: "/communities/show.ng"
         controller: "CommunityShowCnt"

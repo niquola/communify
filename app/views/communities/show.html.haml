@@ -1,0 +1,10 @@
+.row
+  .span6.community
+    = render 'community'
+  .community
+    .community-body
+      %ul
+        %li(ng-repeat="link in community.links")
+          %a(href="{{link.uri}}") {{link.display}}
+
+%a(href="#/communities") Back

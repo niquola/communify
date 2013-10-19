@@ -1,0 +1,12 @@
+.logo
+  %img( ng-src= "{{community.logo}}" )
+.community-body
+  %h3
+    %a(href="#/communities/{{community.identity}}") {{community.display}}
+    %small.city {{ community.city }}
+    %span.members {{community.members_count}} memebers
+  .tags
+    .tag(ng-repeat='tag in community.tags') {{tag}}
+  %p.abstract {{ community.abstract }}
+.community-meetup
+  Next meetup: 10 october 12:00

@@ -1,0 +1,63 @@
+.community {
+  box-shadow: 0 0px 7px black;
+  background-color: #111;
+  color: #ddd;
+  border-radius: 3px;
+  position: relative;
+  margin: 1em 0em;
+
+  &:hover {
+    box-shadow: 0 0px 7px #777;
+  }
+
+  .logo {
+    margin: 15px;
+    margin-top: 30px;
+    padding: 10px;
+    float: left;
+    border: 2px solid black;
+    border-radius: 100%;
+    background: black;
+    box-shadow: 0 0px 30px #333;
+    img {
+      max-width: 50px;
+      max-height: 50px;
+    }
+  }
+
+  .community-body {
+    padding: 1em;
+    margin-left: 100px;
+    .abstract {
+      max-width: 35em;
+    }
+  }
+
+  .community-meetup {
+    border-top: 1px solid #222;
+    padding: 1em;
+    background: black;
+  }
+  .tags {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    clear: bottom;
+    .tag {
+      opacity: 0.8;
+      background: #2a6496;
+      background-color: rgba(42, 100, 150, 0.78);
+      border-radius: 4px;
+      margin: 4px 0;
+      padding: 4px 10px;
+      text-align: right;
+      float: right;
+      clear: both;
+      font-size: 1.2em;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+}

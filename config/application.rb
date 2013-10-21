@@ -8,6 +8,7 @@ Bundler.require(:default, Rails.env)
 
 module Communify
   class Application < Rails::Application
+    config.cache_store = :dalli_store
     config.autoload_paths << Rails.root.join("app", "use_cases")
     config.autoload_paths << Rails.root.join("app", "repositories")
     config.assets.paths << Rails.root.join("vendor", "assets", "components")

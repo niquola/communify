@@ -6,7 +6,7 @@ window.app
         controller: "WelcomeCnt"
       .when "/me",
         templateUrl: "/profiles/me.ng"
-        controller: "WelcomeCnt"
+        controller: "ProfileMeCnt"
       .when "/communities",
         templateUrl: "/communities.ng"
         controller: "CommunitiesCnt"

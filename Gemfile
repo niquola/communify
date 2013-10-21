@@ -40,6 +40,14 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+
+gem 'dalli' # memcache
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-twitter'
+gem 'omniauth-github'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

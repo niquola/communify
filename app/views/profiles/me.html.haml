@@ -1,1 +1,9 @@
-%h1 Profile
+.profile-big.bblock
+  %img.avatar(ng-src="{{me.info.image}}")
+  %h2
+    %span.icon-google-plus
+    {{ me.info.name }}
+  %h3 {{ me.info.email }}
+  %a(ng-repeat="(name, href) in me.info.urls" href="{{href}}") {{name}}
+  %p
+    {{me | json}}

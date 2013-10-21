@@ -12,4 +12,8 @@ Communify::Application.routes.draw do
       get :countries
     end
   end
+
+  match 'auth/:provider/callback', to: 'auth#create', via: [:get, :post]
+  match 'auth/:provider', to: 'auth#create', via: [:get, :post]
+  match 'auth/failure', to: redirect('/'), via: [:get, :post]
 end

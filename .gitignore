@@ -17,3 +17,4 @@
 *.sw?
 *~
 /config/env/*
+/public/assets/

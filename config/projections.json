@@ -1,0 +1,30 @@
+{
+  "app/models/*.rb": {
+    "command": "model",
+    "affinity": "model",
+    "alternate": ["spec/models/%s_spec.rb"],
+    "related": "db/schema.rb#%p",
+    "template": "class %S\nend"
+  },
+  "app/repositories/*_repository.rb": {
+    "command": "repo",
+    "affinity": "model",
+    "alternate": ["spec/repositories/%s_spec.rb"],
+    "related": "db/schema.rb#%p",
+    "template": "class %SRepository\nend"
+  },
+  "app/repositories/*_factories.rb": {
+    "command": "fact",
+    "affinity": "model",
+    "alternate": ["spec/factories/%s_spec.rb"],
+    "related": "db/schema.rb#%p",
+    "template": "class %SFactory\nend"
+  },
+  "app/use_cases/*_use_case.rb": {
+    "command": "uc",
+    "affinity": "model",
+    "alternate": ["spec/use_cases/%s_spec.rb"],
+    "related": "db/schema.rb#%p",
+    "template": "class %SUseCase\nend"
+  }
+}

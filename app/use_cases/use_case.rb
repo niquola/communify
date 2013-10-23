@@ -3,14 +3,14 @@ class UseCase
     def command(name, *args)
       self.send(:define_method, "#{name}!") do |*args|
         self.class.const_get("#{name.to_s.camelize}Command")
-        .new(ctx).execute(args)
+        .new(ctx).execute(*args)
       end
     end
 
     def query(name, *args)
       self.send(:define_method, "#{name}") do |*args|
         self.class.const_get("#{name.to_s.camelize}Query")
-        .new(ctx).query(args)
+        .new(ctx).query(*args)
       end
     end
   end

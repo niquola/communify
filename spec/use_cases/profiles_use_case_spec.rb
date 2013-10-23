@@ -117,8 +117,8 @@ describe ProfilesUseCase do
     profile.name.should ==  'John Doe'
     profile.social_profiles.size.should == 1
 
-    subject.update!(session_key, {name: 'Huanito'})
-    subject.add_social_profile(session_key, twitter_omniauth)
+    subject.update!(session_key, name: 'Huanito')
+    subject.add_social_profile!(session_key, twitter_omniauth)
 
     profile = subject.profile(session_key)
     profile.name.should == 'Huanito'
